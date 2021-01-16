@@ -1,0 +1,93 @@
+.header {
+  padding: 5px 0;
+  //background-color: #111111;
+
+  background: url(https://cdn.discordapp.com/attachments/507814104753373184/799265453712474129/76_20210114161559.png)
+    50%;
+
+  z-index: 10;
+
+  position: absolute;
+  width: 100%;
+
+  border-bottom: $--yellow 4px solid;
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    align-items: center;
+    display: flex;
+    color: rgb(255, 217, 0);
+    img {
+      height: 60px;
+      margin-right: 5px;
+    }
+  }
+
+  &__menu-open {
+    display: none;
+  }
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -10px;
+  &__item {
+  }
+  &__links {
+    margin: 5px;
+    border-left: $--yellow 2px solid;
+  }
+  &__pages {
+    margin: 5px;
+  }
+}
+
+.header-nav-pages {
+  &__link {
+    color: $--yellow;
+    font-size: 20px;
+    text-decoration: unset;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: all 0.5s;
+    &:hover {
+      text-shadow: 0px 2px 3px $--yellow;
+    }
+  }
+}
+.header-nav-item {
+}
+.header-nav-links {
+  &__img {
+    margin: 5px;
+  }
+}
+.header-nav-links-img {
+  &__vk {
+    height: 40px;
+    width: 40px;
+  }
+  &__ds {
+    height: 35px;
+    width: 50x;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-nav {
+    display: none;
+  }
+  .header__menu-open {
+    display: block;
+    img {
+      height: 32px;
+    }
+  }
+}
