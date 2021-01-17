@@ -25,6 +25,9 @@
             <a href="https://discord.com/invite/WvWyh9N" class="" target="_blank"> <img :src="require('~/assets/img/ds.png')" alt="" class="header-nav-links__img header-nav-links-img header-nav-links-img__ds"> </a>
           </div>
         </nav>
+        <div class="header__menu-open" @click="toggleSidebar">
+          <img :src="require('~/assets/img/openMenu.svg')" alt="Open Menu">
+        </div>
       </div>
     </div>
   </header>

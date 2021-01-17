@@ -3,8 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+@import "common/vars";
 @import "common/container";
 @import "common/fonts";
-@import "common/vars";
+@import "common/page";
 
-@import "components/layouts/header";
+@import "components/layout/header";
+@import "components/layout/sidebar";
